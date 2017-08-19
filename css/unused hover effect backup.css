@@ -1,0 +1,108 @@
+.instagram {
+  background-image: url("../images/glyph-logo_May2016.png");
+  background-image: url("../layers-export/facebook-solid.png");
+  width: 24px;
+  height: 24px;
+  left: 92%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transition: transform ease-out 0.1s, background 0.2s;
+}
+.instagram:after {
+  content:'';
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: rgba(255,255,255,1);
+  border-radius: 25px;
+
+  z-index: -1;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
+  opacity: 1;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.facebook {
+  background-image: url("../layers-export/facebook-solid.png");
+  width: 24px;
+  height: 23px;
+  left: 85%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transition: transform ease-out 0.1s, background 0.2s;
+}
+.facebook:after{
+  content:'';
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 29px;
+  height: 29px;
+  background: rgba(255,255,255,1);
+  border-radius: 52px;
+
+  z-index: -1;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
+  opacity: 1;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+} 
+.facebook:hover{
+  background-image: url("../layers-export/facebook-solid.png");
+  -webkit-transform: scale(0.93);
+  -moz-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.instagram:hover{
+  background-image: url("../images/glyph-logo_May2016.png");
+  background-image: url("../layers-export/facebook-solid.png");
+  -webkit-transform: scale(0.93);
+  -moz-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.facebook:hover:after, .instragram:hover:after {
+  background-color: rgba(104, 152, 127, 0.19);
+  -webkit-animation: sonarEffect 1.3s ease-out 75ms infinite;
+  -moz-animation: sonarEffect 1.3s ease-out 75ms infinite;
+  animation: sonarEffect 1.3s ease-out 75ms infinite;
+}
+@keyframes sonarEffect {
+  0% {
+    opacity: 0.3;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #c3e2cf, 0 0 0 10px rgba(255,255,255,0.5);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #c3e2cf, 0 0 0 10px rgba(255,255,255,0.5);
+    transform: scale(1.5);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    opacity: 0;
+  }
+}

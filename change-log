@@ -1,0 +1,63 @@
+Mar 4th
+cmheader, minor change 
+line 21 hr style changed to fix window width overflow
+
+app/views/admin/mulitup.php, major changes 
+added better style and display for when gallery database has nothing stored
+
+admin/upload-1.php, minor change
+added <br> on line 27
+
+js/script.js, minor change
+for firefox compatablity, added html to animate method's selctor on line 371
+------------------------------------------------------------------------------------------------------
+Mar 20th - 22nd
+script.js, minor change
+fixed smooth scroll on link click
+
+app/views/home.php, minor change
+fixed menu prices for drinks w/ sizes
+
+app/views/templates/header.php, 3 changes: carousel transitions link, anchor target blank, favicon links
+script.js, fade transitions and timing, hover animations
+
+app/views/templates/footer.php added fa link
+favicon folder added
+
+app/views/templates/header2.php added
+app/views/gallery.php header2 included
+
+app/views/contact.php added
+contact.php added
+
+css/style.css added font, added css for contact page, hover css
+
+apps/views/home.php linked specials
+------------------------------------------------------------------------------------------------------
+
+April 9th
+footer2.php added
+script2.js added
+
+app/views/templates/gallery.php and contact.php,minor change 
+changed to include footer2.php
+
+header2.php nav links fixed
+
+footers hours improved
+style footer and savor sections modified, mobile margin fixed
+
+.htaccess added in root to remove php file extension, redirect index to root
+headers, footers - removed .php links
+
+------------------------------------------------------------------------------------------------------
+
+April 10th
+header.php meta data added
+app/views//templates/gallery.php and contact.php changed to use header.php (no longer need header2.php i think) 
+
+start.php changed db handler to connect to local host 127.0.0.1
+
+style.css added media query to adjust footer hours to fit on one line on small widths
+
+_______________________BELOW NEEDS TO BE SFTP'D__________________________
